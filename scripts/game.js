@@ -65,7 +65,7 @@ for (let i = 0; i < 10; i++) {
 document.querySelector('.play.main').onclick = () => {
     if (!active || !chosen.length) { return }
     active = false
-    
+
     let bet = chosen.length >= 5 ? 650 : 100 + chosen.length * 100
     changeBalance(-bet)
     balanceBot.innerHTML = Number(balanceBot.innerHTML) - bet
@@ -96,7 +96,7 @@ document.querySelector('.play.main').onclick = () => {
             if (circleNum == chosen.length) {
                 clearInterval(ballInterval)
             }
-        }, 1000);
+        }, 500);
 
         setTimeout(() => {
             let win = countCommon(botChosen, winList) == countCommon(chosen, winList) ? 0 : (countCommon(botChosen, winList) < countCommon(chosen, winList) ? 1 : -1)
@@ -120,7 +120,7 @@ document.querySelector('.play.main').onclick = () => {
             }
 
             warning.style.left = '50%'
-        }, chosen.length * 1000 + 1500);
+        }, chosen.length * 500 + 1500);
 
     }, 500);
 }
@@ -148,7 +148,7 @@ document.querySelector('.random').onclick = () => {
     clearField()
     let numList = shuffle(Array.from({ length: 80 }, (v, i) => String(i + 1)))
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 10; i++) {
         document.querySelector('.cell[data-num="' + numList[i] + '"]').classList.add('chosen')
         chosen.push(numList[i])
     }

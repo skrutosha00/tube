@@ -120,7 +120,7 @@ body {
     inset 0px 0px 2.63526px rgba(255, 66, 66, 0.48);
 
   transform: translate(-50%, 0);
-  transition: left 0.5s ease;
+  transition: left 0.2s ease;
 }
 
 .bot_cont {
