@@ -1,0 +1,381 @@
+body {
+  min-height: 360px;
+}
+
+.home {
+  position: absolute;
+  left: 3%;
+  top: 1%;
+
+  width: 70px;
+  height: 26px;
+
+  background: linear-gradient(180deg, #6d9e26 0%, #a9d95c 100%);
+  border: 1px solid #c9c9c9;
+  border-radius: 11px;
+}
+
+.warning {
+  position: absolute;
+  left: -50%;
+  top: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+
+  width: 50%;
+  height: 50%;
+  font-size: 2vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background: #252626;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+
+  transition: left 0.5s ease;
+}
+
+.text {
+  max-width: 50%;
+}
+
+.again {
+  max-width: 25%;
+  max-height: 25%;
+}
+
+.balance_field {
+  position: absolute;
+  left: 50%;
+  top: 1%;
+  transform: translate(-50%, 0);
+
+  width: 133px;
+  height: 26px;
+}
+
+.balance {
+  transition: color 0.5s ease;
+}
+
+.balance.anim {
+  color: #a9d95c;
+}
+
+.tube_cont {
+  position: absolute;
+  top: 10%;
+
+  width: 100%;
+  height: 40px;
+}
+
+.tube_cont img {
+  max-height: 100%;
+  z-index: 2;
+}
+
+.tube_left {
+  position: absolute;
+  left: 0;
+  transform: scale(-1, 1);
+}
+
+.tube_right {
+  position: absolute;
+  right: 0;
+}
+
+.circle_cont {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  height: 30px;
+  width: 100%;
+
+  background: #09532d;
+  border: 0.878419px solid #25935e;
+}
+
+.ball {
+  position: absolute;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+
+  background: radial-gradient(
+    54.41% 69.12% at 13.24% 22.06%,
+    #ff7d83 0%,
+    #ca0809 50.96%,
+    #ce4127 100%
+  );
+  border: 0.878419px solid #ac0606;
+  border-radius: 50%;
+  box-shadow: 0px 3.51368px 3.51368px rgba(0, 0, 0, 0.25),
+    inset 4.39209px 4.39209px 5.27051px rgba(255, 255, 255, 0.48),
+    inset 0px 0px 2.63526px rgba(255, 66, 66, 0.48);
+
+  transform: translate(-50%, 0);
+  transition: left 0.5s ease;
+}
+
+.bot_cont {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+
+  font-size: 2vw;
+}
+
+.name {
+  color: #5ffe51;
+}
+
+.bet_info_cont {
+  position: absolute;
+  left: 18%;
+  top: 22%;
+}
+
+.bet_info {
+  width: 55px;
+  margin-bottom: 10px;
+  font-size: 12px;
+
+  background: #252626;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.field_cont {
+  position: absolute;
+  left: 54%;
+  top: 21%;
+  transform: translate(-50%, 0);
+
+  display: flex;
+
+  background: #1a4422;
+  border: 1px solid #fbad40;
+  border-radius: 4px;
+}
+
+.field {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+
+  width: 335px;
+  height: 280px;
+
+  margin-left: 5px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+
+  background: #1b2c1e;
+  border: 1px solid #ccff8c;
+}
+
+.cell.chosen {
+  background: linear-gradient(180deg, #ff9900 0%, rgba(255, 230, 0, 0) 100%);
+}
+
+.cell.bot_chosen {
+  background: linear-gradient(180deg, #ff3d00 0%, rgba(255, 61, 0, 0) 100%);
+}
+
+.cell.cell.chosen.bot_chosen {
+  background: linear-gradient(180deg, #ff9900 0%, #ff3d00 100%);
+}
+
+.field_control {
+  width: 40px;
+  margin: 5px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+
+  background: #062d0c;
+  border-radius: 3px;
+}
+
+.random {
+  width: 80%;
+  margin: auto;
+}
+
+.indicator {
+  width: 80%;
+  margin: auto auto 2px;
+
+  color: #2b3338;
+  font-weight: 500;
+
+  background: linear-gradient(180deg, #f6be35 0%, #fda146 100%);
+  border-radius: 3px;
+}
+
+.indicator.active {
+  background: linear-gradient(180deg, #92c75b 0%, #326524 100%);
+}
+
+.cross {
+  max-width: 50%;
+  margin: auto;
+}
+
+.control {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  width: 104px;
+}
+
+.auto {
+  max-width: 60%;
+}
+
+.play {
+  width: 100px;
+  height: 100px;
+
+  border: 2px solid #508b52;
+  border-radius: 50%;
+  background: #072511;
+}
+
+.play img {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+@media screen and (max-width: 740px) {
+  .control {
+    width: 64px;
+  }
+
+  .play {
+    width: 60px;
+    height: 60px;
+  }
+
+  .bot_cont {
+    display: flex;
+    justify-content: space-between;
+
+    top: 1%;
+    right: 3%;
+    left: auto;
+  }
+
+  .name {
+    margin-right: 20px;
+  }
+
+  .bet_info_cont {
+    left: 8%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .bet_info_cont {
+    left: 2%;
+  }
+
+  .field_cont {
+    left: 51%;
+  }
+
+  .control {
+    right: 1%;
+  }
+}
+
+@media screen and (min-height: 768px) {
+  .home {
+    width: 140px;
+    height: 52px;
+    font-size: 28px;
+  }
+
+  .balance_field {
+    width: 266px;
+    height: 52px;
+    font-size: 28px;
+  }
+
+  .tube_cont {
+    height: 80px;
+  }
+
+  .circle_cont {
+    height: 60px;
+  }
+
+  .ball {
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+  }
+
+  .field {
+    width: 502.5px;
+    height: 420px;
+  }
+
+  .cell {
+    width: 45px;
+    height: 45px;
+  }
+
+  .field_control {
+    width: 60px;
+  }
+
+  .indicator {
+    margin-bottom: 5px;
+  }
+
+  .bet_info_cont {
+    top: 34%;
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .bet_info {
+    width: 80px;
+    font-size: 18px;
+    left: 19%;
+    top: 27%;
+  }
+
+  .field {
+    width: 670px;
+    height: 560px;
+  }
+
+  .cell {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .control {
+    width: 144px;
+    right: 3%;
+  }
+
+  .play {
+    width: 140px;
+    height: 140px;
+  }
+}

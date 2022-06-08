@@ -1,0 +1,63 @@
+.cards {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  max-width: 40%;
+}
+
+.cubes {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+
+  max-width: 10%;
+}
+
+.diamond1 {
+  position: absolute;
+  bottom: 0%;
+  right: 20%;
+  z-index: 2;
+
+  max-width: 15%;
+}
+
+.diamond2 {
+  position: absolute;
+  bottom: 1%;
+  right: 25%;
+
+  transform: rotate(-50deg);
+  max-width: 20%;
+}
+
+.button {
+  width: 30%;
+  height: 15%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+}
+
+.balance_field {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  width: 140px;
+  height: 40px;
+}
+
+@media screen and (min-height: 600px) {
+  .balance_field {
+    width: 280px;
+    height: 80px;
+    font-size: 48px;
+  }
+}
+

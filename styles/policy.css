@@ -1,0 +1,26 @@
+.header {
+  font-weight: 900;
+  font-size: 3vw;
+  text-align: left;
+
+  width: 80%;
+  margin: 2vw auto auto;
+}
+
+.text {
+  height: 60%;
+  width: 80%;
+  margin: 2.5vw auto auto;
+
+  font-size: 2vw;
+  text-align: left;
+
+  overflow: scroll;
+}
+
+.button {
+  width: 30%;
+  height: 15%;
+
+  margin: 2vw auto auto;
+}
